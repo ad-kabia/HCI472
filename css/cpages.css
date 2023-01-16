@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+.navbar-dark {
+    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 1.0);
+  }
+
+  .bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgb(3, 62, 31) !important;
+  }
+
+  .navbar-toggler {
+    border: var(--bs-border-width) solid rgba(255, 255, 255, 0.5);
+  }
+
+  .homepage{
+    padding: 1.5em;
+    /* background-color:salmon; */
+  }
+
+  body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  h1,h2,h3,h4,h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  h1{
+    font-size: 1.802em;
+  }
+
+  h2{
+    font-size: 1.502em;
+  }
+  
+  h3{
+    font-size: 1.424em;
+    text-indent: -30px;
+  }
+  
+  h4{
+    font-size: 1.266em;
+  }
+  
+  h5{
+    font-size: 1.125em;
+  }
+
+  p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    line-height: 1.325em;
+  }
+
+  .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgb(3, 62, 31);
+    padding: 1.5em 0;
+  }
+
+  .designPage{
+    padding-top: 0.8em;
+  }
+
+  .cardContainer{
+    max-width: 1000px;
+  }
+  
+.btn{
+ background-color: orange;
+ color: white;
+
+}
+
+.btn-primary:hover{
+  background-color: blueviolet;
+}
+
+/* need to fix this */
+.btn-primary:visited,
+.btn-primary:active,
+.btn-primary:focus{
+  background-color: orange;
+}
+
+.modal-body{
+  text-align: center;
+}
