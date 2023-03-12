@@ -1,118 +1,99 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Ahmed Kabia Tutorial 1</title>
+  	<title>Ahmed Kabia Design System</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="This website displays ...." name="description">
-
-    <!-- This is where you put your google font in if applicable -->
-    <!--     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet"> -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="css/cpages.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/ahmed kabia site favicon 2.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
   </head>
-  
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Ahmed Kabia</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-            <li class="nav-item">
-              <a class="nav-link" href="design/logos.html">Logos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Research
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="research/research1.html">Project 1</a></li>
-                <li><a class="dropdown-item" href="#">Project 2</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-                <li><a class="dropdown-item" href="#">Project 3</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="design/design.html">Design</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Typefaces
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="typefaces/typeface1.html">Typeface 1</a></li>
-                <li><a class="dropdown-item" href="typefaces/typeface2.html">Typeface 2</a></li>
-                <li><a class="dropdown-item" href="typefaces/typeface3.html">Typeface 3</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-	    <!-- This is where you put content -->
-    <div id="projectCarousel" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <!-- change images before submitting -->
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="imgs/1500x500_overland.jpg" class="d-block w-100" alt="Overland Twitter banner (Placeholder for Project 1)">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Project 1</h5>
-            <p>This will be text for project 1</p>
+		
+		<div class="d-flex">
+        <nav id="sidebar">
+				  <div class="custom-menu">
+					  <button type="button" id="sidebarCollapse" class="toggle-btn">
+	    				<span class="sr-only">Toggle Menu</span>
+	          				<div id="nav-icon1">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+	       		</button>
+        	</div>
+          <div class="p-4 pt-6">
+            <a href="index.html" class="logo">
+              <!-- double check this later -->
+              <img class=mb-4 alt = "Ahmed Kabia Portfolio Logo" src="img/ahmed kabia site logo v2.png" width="80%" alt="Ahmed Kabia's Portfolio Logo">
+            </a>
+            <ul class="list-unstyled components">
+          
+              <li class="">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Foundations</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li>
+                      <a href="foundation/type.html">Typography</a>
+                  </li>
+                  <li>
+                      <a href="foundation/color.html">Color</a>
+                  </li>
+                  <li>
+                      <a href="foundation/logo.html">Logo</a>
+                  </li>
+                </ul>
+              </li>
+                
+              <li>
+                <a href="#ComponentsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Components</a>
+                <ul class="collapse list-unstyled" id="ComponentsSubmenu">
+                  <li>
+                      <a href="components/navbar.html">Navbar</a>
+                  </li>
+                  <li>
+                      <a href="components/cards.html">Cards</a>
+                  </li>
+                  <li>
+                      <a href="components/footer.html">Footer</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#PatternsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Patterns</a>
+                <ul class="collapse list-unstyled" id="PatternsSubmenu">
+                  <li>
+                      <a href="patterns/homepage/homepg.html">Home Page</a>
+                  </li>
+                  <li>
+                      <a href="patterns/about me/aboutme.html">About Me</a>
+                  </li>
+                
+                </ul>
+              </li>
+            </ul> 
           </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imgs/1500x500_tunic.jpg" class="d-block w-100" alt="Tunic Twitter banner (Placeholder for Project 2)">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Project 2</h5>
-            <p>This will be text for project 2</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imgs/1500x500_moon.jpg" class="d-block w-100" alt="Moon Twitter banner (Placeholder for Project 3)">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Project 3</h5>
-            <p>This will be text for porject 3</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-  </div>
+        </nav>
 
-  <!-- <div class="container text-justify homepage">
-    <div class="row">
-      <div class="col-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et tortor consequat id porta nibh venenatis. In ante metus dictum at tempor commodo. Purus viverra accumsan in nisl nisi. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Vitae tempus quam pellentesque nec nam. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis.</div>
-      <div class="col-sm">Nibh tellus molestie nunc non blandit. In nisl nisi scelerisque eu ultrices. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Libero id faucibus nisl tincidunt eget nullam non nisi. Aliquet lectus proin nibh nisl. Vel risus commodo viverra maecenas accumsan lacus. Et molestie ac feugiat sed. Euismod elementum nisi quis eleifend quam adipiscing. Neque sodales ut etiam sit amet nisl purus in. </div>
-    </div>
-  </div> -->
+        <!-- Page Content  -->
+        <div class = "container">
+          <div class = "row p-5 pt-6">
+            <div id="content">
+              <h1>Portfolio Design System</h1>
+              <h2>About</h2>
+              <p>Do a blurb about your system here - and include your adjectives from the mind map exercise. Consider a meaninful image(s). See posted student examples.  </p>
+    		             
+    		      <p>The categories of Foundation, Components and Patterns are not set in stone. Use whatever categories makes sense for your system. Look at multiple systems to see how they categorize. Note, that we are not going in the detail of design tokens in this assignment. </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>      <!-- Content  -->
+      </div><!-- Row  -->
+    </div><!-- Container -->
+		</div><!-- d flex -->
 
-  <div class="footer">
-    © Ahmed Kabia | 2023
-  </div>
-      <!-- <h1>Hello, world!</h1> -->
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
